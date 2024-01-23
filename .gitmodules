@@ -1,0 +1,3 @@
+[submodule "snowTasksProject"]
+	path = snowTasksProject
+	url = https://github.com/kryne001/work_projects.git
