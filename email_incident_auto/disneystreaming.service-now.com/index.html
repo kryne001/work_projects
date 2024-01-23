@@ -1,0 +1,523 @@
+<!DOCTYPE html><html lang="en" class=" ltr " data-doctype="true" dir="ltr" ontouchend="CustomEvent.fireAll('body_clicked', event);"><head><script>document.addEventListener('click', function (event) {
+				CustomEvent.fireAll('body_clicked', event);
+			});
+			document.hasBodyClickedTrigger = 'true';</script><script type="text/javascript"></script><script src="/uxasset/externals/service-worker/loader.jsdbx?uxpcb=1702717501924&amp;sysparm_substitute=false"></script><script>var mswDisabledValue = "false";
+            var disabled = mswDisabledValue === 'true' ? true : false;
+            var serviceWorkers = JSON.parse("[{\"scope\":\"/\",\"serviceWorkerUrl\":\"/uxsw/scope/root.js\"}]");
+            var cacheBuster = "1702717501924";
+            var SERVICE_WORKER_MANAGER_CONFIG = {disabled, serviceWorkers};
+            if (window.serviceWorkerManager) window.serviceWorkerManager.init(SERVICE_WORKER_MANAGER_CONFIG);
+            var prefetchedAssetsStr = "";
+            var defaultPrefetchedAssets = [
+                '/uxasset/externals/amb-client-js/index.jsdbx',
+                '/uxasset/externals/@devsnc/library-uxf/index.jsdbx',
+                '/uxasset/externals/@servicenow/ui-mega/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/bundled-assets.jsdbx',
+                '/uxasset/externals/polaris-app-shell/index.jsdbx',
+                '/uxasset/externals/js-common-mega/bundled-assets.jsdbx',
+                '/uxasset/externals/sn-canvas-common/latest/index.jsdbx',
+                '/uxasset/externals/sn-canvas-chrome/index.jsdbx',
+                '/uxasset/externals/sn-canvas-core/index.jsdbx',
+                '/uxasset/externals/sn-canvas-blank/index.jsdbx',
+                '/uxasset/externals/sn-canvas-core-addon/latest/index.jsdbx',
+                '/uxasset/externals/@devsnc/ux-metrics-runtime/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-layout/index.jsdbx',
+                '/uxasset/externals/controls-mono/bundled-assets.jsdbx',
+                '/uxasset/externals/path-to-regexp/latest/index.jsdbx',
+                '/uxasset/externals/lodash/latest/index.jsdbx',
+                '/uxasset/externals/@devsnc/ux-metrics/index.jsdbx',
+                '/uxasset/externals/@devsnc/ux-metrics-client-interaction-subscriber/index.jsdbx',
+                '/uxasset/externals/sn-search-input-wrapper/index.jsdbx',
+                '/uxasset/externals/fflate/latest/index.jsdbx',
+                '/uxasset/externals/cuid/latest/index.jsdbx',
+                '/uxasset/externals/date-fns/latest/index.jsdbx',
+                '/uxasset/externals/dompurify/latest/index.jsdbx',
+                '/uxasset/externals/sn-http-request/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/ui-renderer-react/index.jsdbx',
+                '/uxasset/externals/react-dnd/latest/index.jsdbx',
+                '/uxasset/externals/react-dnd-html5-backend/latest/index.jsdbx',
+                '/uxasset/externals/@devsnc/ux-metrics-appsee-subscriber/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/chevronDown.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/star.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/pencilPage.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/close.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/home.jsdbx',
+                '/uxasset/externals/sn-component-workspace-global-search/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/ellipsisVertical.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/user.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/gear.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/eye.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/openLinkRight.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/squareArrowLeft.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/loader.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/presenceAvailable.jsdbx',
+                '/uxasset/externals/@devsnc/library-appsee-web-sdk/latest/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/magnifyingGlass.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/plus.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/ellipsisHorizontal.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/list.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/analyticsCenter.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/document.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/window.jsdbx',
+                '/uxasset/externals/@devsnc/library-form/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-resizable-panes/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-scripting-environment/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-uxf-tab-set/index.jsdbx',
+                '/uxasset/externals/sn-component-timeago/index.jsdbx',
+                '/uxasset/externals/@servicenow/condition-builder-commons/latest/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-contact-card/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-scripting-ui-components/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-scripted-modal/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-uxf-page/index.jsdbx',
+                '/uxasset/externals/sn-ux-core/latest/index.jsdbx',
+                '/uxasset/externals/sn-component-workspace-agent-assist/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-record-list-connected/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-stylized-text/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-list-commons/index.jsdbx',
+                '/uxasset/externals/@servicenow/sass-kit/latest/index.jsdbx',
+                '/uxasset/externals/interactjs/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-record-list-filter-panel/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-record-list-menu-connected/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-grid/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-condition-builder-preview/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-condition-builder/index.jsdbx',
+                '/uxasset/externals/@devsnc/library-vtb-commons/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-record-list-panel/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-condition-builder-record-count/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-record-list/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-pagination/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-record-form-connected/index.jsdbx',
+                '/uxasset/externals/sn-tinymce/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/behavior-dynamic-translation/latest/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-declarative-actions/index.jsdbx',
+                '/uxasset/externals/@devsnc/uxf-effect-component-loader/latest/index.jsdbx',
+                '/uxasset/externals/updeep/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-dot-walk/index.jsdbx',
+                '/uxasset/externals/sn-component-file-icon/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-grid-commons/latest/index.jsdbx',
+                '/uxasset/externals/lodash/4.17.21/function.jsdbx',
+                '/uxasset/externals/lodash-move/latest/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-drag-and-drop/index.jsdbx',
+                '/uxasset/externals/moment/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-email-client/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-link-interceptor-behavior/index.jsdbx',
+                '/uxasset/externals/sn-user-preferences/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-record-common/index.jsdbx',
+                '/uxasset/externals/servicenow-now-contextual-sidebar/index.jsdbx',
+                '/uxasset/externals/resize-observer-polyfill/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/sn-activity-stream-queries/latest/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-activity-stream/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-activity-stream-common/index.jsdbx',
+                '/uxasset/externals/sn-oe-sfs/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-list-menu/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/ongoing.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/cs.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/nl.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/et.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/fi.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/fr.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/de.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/he.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/hu.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/it.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/ja.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/ko.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/pl.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/pt.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/ru.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/es.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/th.jsdbx',
+                '/uxasset/externals/moment/2.29.1/dist/locale/tr.jsdbx',
+                '/uxasset/externals/sn-components-omnichannel-interaction/index.jsdbx',
+                '/uxasset/externals/now-chat-window/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-tab-filter/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-ui-menu-util/index.jsdbx',
+                '/uxasset/externals/sn-connected-chat/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-search-combobox/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/circleQuestion.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/bell.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/thumbtack.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/globe.jsdbx',
+                '/uxasset/externals/locale-code/latest/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-search-result-evam-card/index.jsdbx',
+                '/uxasset/externals/marked/latest/index.jsdbx',
+                '/uxasset/externals/tld-list/latest/index.jsdbx',
+                '/uxasset/externals/moment-timezone/latest/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/caretDown.jsdbx',
+                '/uxasset/externals/@devsnc/sn-help-panel/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-search-results-container/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-data-set/index.jsdbx',
+                '/uxasset/externals/@servicenow/now-data-row/index.jsdbx',
+                '/uxasset/externals/@devsnc/sn-evam-resolver/latest/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/tag.jsdbx',
+                '/uxasset/externals/@devsnc/sn-multi-record-associator/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/recordActivityDetails.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/recordActivityStream.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/recordActivity.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/sliders.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/filter.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/sortDescending.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/lock.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/graduationCap.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/paperclip.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/userGroup.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/chevronUp.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/asterisk.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/circleInfo.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/listHide.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/sync.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/squareShare.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/arrowLeftMost.jsdbx',
+                '/uxasset/externals/sn-component-workspace-shn/index.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/shoppingCart.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/arrowLeft.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/arrowRight.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/gridVertical.jsdbx',
+                '/uxasset/externals/nds-megabundle/icons/arrowRightMost.jsdbx',
+                '/uxasset/externals/polaris-app-shell/components/sn-polaris-layout/transaction-status-message/index.jsdbx',
+                '/uxasset/externals/@servicenow/sn-banner-announcement/index.jsdbx'
+            ];
+            var prefetchedAssets = prefetchedAssetsStr ? prefetchedAssetsStr.split(',') : defaultPrefetchedAssets;
+            prefetchedAssets.unshift('/uxasset/set-cache-buster/' + cacheBuster + '.js');
+            prefetchedAssets.push("/uxsp/all.jsdbx?uxpcb=8AxZhBienn8AWRHPqKnaukwRMgM=");
+
+            var staticPageFragmentUrls = ''.split(',');
+            staticPageFragmentUrls.forEach(url => url ? prefetchedAssets.push(url) : null);
+
+            if (navigator.serviceWorker) {
+                navigator.serviceWorker.onmessage = event => {
+                    if (event.data === 'SERVICE_WORKER_ACTIVATED') {
+                        prefetchedAssets.forEach(url => import(url));
+                    }
+                };
+            }</script><title>ServiceNow</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"></meta><meta http-equiv="cache-control" content="public"></meta><meta name="viewport" content="initial-scale=1.0"></meta><script type="text/javascript" data-description="globals population">
+	window.NOW = window.NOW || {};
+	var g_loadTime = new Date();
+	var lastActivity = new Date();
+	var g_lang = 'en';
+	var g_system_lang = 'en';
+	var g_enhanced_activated = 'true';
+	  var g_popup_timeout = parseInt(100);
+	var g_export_warn_threshold = parseInt(10000);
+	  var g_event_handler_ids = {};
+	var g_event_handlers = [];
+	var g_event_handlers_onLoad = [];
+	var g_event_handlers_onSubmit = [];
+	var g_event_handlers_onChange = [];
+	var g_event_handlers_onCellEdit = {};
+	var g_event_handlers_localCache = {};
+	var g_event_handlers_queryTracking = true;
+	var g_user_date_time_format = "yyyy-MM-dd hh:mm:ss a";
+	var g_user_date_format = "yyyy-MM-dd";
+	var g_user_decimal_separator = ".";
+	var g_user_grouping_separator = ",";
+	var g_glide_list_separator = ", ";
+	var g_allow_field_dependency_for_templates = ("true" === "true");
+	var g_tz_offset = 0;
+	  var g_tz_user_offset = true;
+	var g_first_day_of_week = parseInt(1, 10);
+	var g_date_picker_first_day_of_week = parseInt(0, 10);
+	  var g_full_calendar_edit = true;
+	var g_submitted = false;
+	var g_max_table_length = 80;
+	var g_fontSizePreference = "";
+	var g_fontSize = "10pt";
+	// use to be the sys_property glide.ui.js_error_notify, hard coded for PRB603998
+	var g_jsErrorNotify = "true";
+	var g_cancelPreviousTransaction = true;
+	var g_text_direction = "ltr";
+	var g_glide_list_filter_max_length =  parseInt("0", 10);
+	var g_accessibility = false;
+	var g_accessibility_tooltips = false;
+	var g_accessibility_tooltip_duration = parseInt("10", 10);
+	var g_accessibility_visual_patterns = false;
+	var g_accessibility_screen_reader_table = false;
+	var g_detail_row = true;
+	var g_builddate = "09-14-2023_1002";
+	// default values to be used in absence of user preferences are hard coded below
+	// as well as in keyboardShortcuts.js and keyboard_preference_changer.xml
+	window.g_keyboard_shortcuts = {};
+	window.g_keyboard_shortcuts.allow_in_input_fields = false;
+	window.g_keyboard_shortcuts.enabled = true;
+	window.g_keyboard_shortcuts.global_search = {};
+	window.g_keyboard_shortcuts.global_search.enabled = true;
+	window.g_keyboard_shortcuts.global_search.key_combination = 'ctrl+alt+g';
+	window.g_keyboard_shortcuts.main_frame = {};
+	window.g_keyboard_shortcuts.main_frame.enabled = true;
+	window.g_keyboard_shortcuts.main_frame.key_combination = 'ctrl+alt+p';
+	window.g_keyboard_shortcuts.navigator_toggle = {};
+	window.g_keyboard_shortcuts.navigator_toggle.enabled = true;
+	window.g_keyboard_shortcuts.navigator_toggle.key_combination = 'ctrl+alt+c';
+	window.g_keyboard_shortcuts.navigator_filter = {};
+	window.g_keyboard_shortcuts.navigator_filter.enabled = true;
+	window.g_keyboard_shortcuts.navigator_filter.key_combination = 'ctrl+alt+f';
+	window.g_keyboard_shortcuts.impersonator = {}
+	window.g_keyboard_shortcuts.impersonator.enabled = true;
+	window.g_keyboard_shortcuts.impersonator.key_combination = 'ctrl+alt+i';
+	// The `g_concourse_onmessage_enforce_same_origin` and `g_concourse_onmessage_enforce_same_origin_whitelist` variables
+    // do not appear to be used anywhere other than the CustomEventManager, but leaving these for backwards compatability
+	var g_concourse_onmessage_enforce_same_origin = 'true'.toLowerCase() === 'true';
+	var g_concourse_onmessage_enforce_same_origin_whitelist = '';
+	window.g_load_functions = [];
+	window.g_render_functions = [];
+	window.g_late_load_functions = [];
+	window.g_tiny_url = {};
+	window.g_tiny_url.use_tiny = 'true' === 'true';
+	window.g_tiny_url.min_length = parseInt('1024');
+	
+	
+	var g_ck = 'ae14e6a887d3b91042ac653e0ebb35dfc1a25a7b7ec09b0ca9a06418b3d46137379b21a0';
+	
+
+	
+	var g_acWaitTime = parseInt(250);
+	
+
+	var g_autoRequest = '';
+
+	try {
+		window.NOW.dateFormat = JSON.parse("{\"timeAgo\": false, \"dateBoth\": false}");
+	} catch (e) {
+		window.NOW.dateFormat = {timeAgo: false, dateBoth: false};
+	}
+
+	window.NOW.dateFormat.dateStringFormat = "yyyy-MM-dd";
+	window.NOW.dateFormat.timeStringFormat = "hh:mm:ss a";
+	window.NOW.shortDateFormat = false;
+	window.NOW.listTableWrap = true;
+	window.NOW.compact = false;
+  	window.NOW.templateToggle = false;
+	window.NOW.tabbed = true;
+	window.NOW.permalink = true;
+	window.NOW.useSimpleStorage = true;
+	window.NOW.httpRequestCompressionThreshold = 40000;
+	window.NOW.httpRequestCompressionLevel = -1;
+	window.NOW.httpRequestCompressionMemoryLevel = -1;
+	window.NOW.deferAmbConnection = false;
+	window.NOW.deferredAmbConnectionTimeout = 10000;
+	window.NOW.simpleStorageSynch = "d7ff32038703311042ac653e0ebb356b";
+	window.NOW.language =  'en';
+	window.NOW.listOpenInAppTab = false;
+	window.NOW.floatingScrollbars = false;
+	
+	window.NOW.user = {};
+	window.NOW.user.preferences = [];
+	window.NOW.user.roles = '';
+	window.NOW.user.allRoles = '';
+	window.NOW.user.userID = '5136503cc611227c0183e96598c4f706';
+	window.NOW.user.departmentID = '';
+	window.NOW.user.firstName = '';
+	window.NOW.user.lastName = 'Guest';
+	window.NOW.user.name = 'guest';
+  	window.NOW.user.isImpersonating = false;
+	window.NOW.batch_glide_ajax_requests = 'true' === 'true';
+	window.NOW.batch_glide_ajax_requests_max_time_in_queue = ~~'50';
+	window.NOW.batch_glide_ajax_disable_time = ~~'1000';
+
+	window.NOW.currency = {};
+	window.NOW.currency.code = 'USD';
+	window.NOW.locale = {};
+	window.NOW.locale.code = 'en_US';
+
+	window.NOW.attachment = {};
+	
+	window.NOW.attachment.overflow_limit =  parseInt('3', 10);
+	window.NOW.isPolarisEnabled = "false";
+	window.NOW.polaris_page_info ={"canUsePolarisCSS":false,"canUsePolarisTemplates":false,"jvar_form_name":"auth_redirect"};</script><script data-comment="GlideUser initialization">(function() {
+		 g_render_functions.push(setGlideUser);
+		function setGlideUser() {
+			if (window.g_user || !window.GlideUser)
+		return;
+
+		window.g_user = new GlideUser(NOW.user.name,
+			  NOW.user.firstName,
+			  NOW.user.lastName,
+			  NOW.user.roles,
+			  NOW.user.userID,
+			  NOW.user.departmentID);
+		window.g_user.setRoles(NOW.user.allRoles, true);
+		}
+	})();</script><script data-description="NOW glide web analytics siteid and url">window.snWebaConfig = window.snWebaConfig || {};
+		// glide web analytics config
+		window.snWebaConfig.siteId = "0";
+		window.snWebaConfig.trackerURL = "";
+		window.snWebaConfig.webaScriptPath = "/scripts/piwik-3.1.1/thirdparty/piwik.min.js";
+		window.snWebaConfig.ambClient = (window.g_ambClient) ? window.g_ambClient : ((window.amb)? window.amb.getClient(): "");
+		window.snWebaConfig.subscribed = false;</script><script type="text/javascript" src="/ConditionalFocus.jsdbx?v=09-14-2023_1002&amp;c=15_471"></script><link href="favicon.ico" rel="shortcut icon"></link><script type="text/javascript" src="/scripts/doctype/xperf_timing.jsx?v=09-14-2023_1002"></script><link type="text/css" rel="stylesheet" href="/styles/css_includes_doctype.cssx?v=09-14-2023_1002&amp;c=52acc0e48757791042ac653e0ebb355f&amp;theme=system"></link><link type="text/css" rel="stylesheet" href="/styles/heisenberg/source_sans_pro.cssx?v=09-14-2023_1002&amp;c=52acc0e48757791042ac653e0ebb355f&amp;theme=system"></link><link type="text/css" rel="stylesheet" href="/styles/heisenberg/heisenberg_all.cssx?v=09-14-2023_1002&amp;c=52acc0e48757791042ac653e0ebb355f&amp;theme=system"></link><script>NOW.xperf.cssEnd = NOW.xperf.now();
+			NOW.xperf.scriptBegin = NOW.xperf.now();</script><script src="/legacy_date_time_choices_processor.do?lang=en"></script><script type="text/javascript" src="/scripts/doctype/js_includes_doctype.jsx?v=09-14-2023_1002&amp;lp=Tue_Sep_26_05_25_24_PDT_2023&amp;c=15_471"></script><script type="text/javascript" src="/scripts/js_includes_customer.jsx?v=09-14-2023_1002&amp;lp=Tue_Sep_26_05_25_24_PDT_2023&amp;c=15_471"></script><script type="text/javascript" src="/scripts/doctype/history_across_tabs.jsx?v=09-14-2023_1002"></script><script type="text/javascript" src="/scripts/doctype/js_includes_legacy.jsx?v=09-14-2023_1002&amp;lp=Tue_Sep_26_05_25_24_PDT_2023&amp;c=15_471"></script><script type="text/javascript" data-comment="navpage layout preferences, onfocus observation">/**
+	* Every window needs to observe these events.
+	*/
+	if (Prototype.Browser.IE && !isMSIE9) {
+		document.onfocusout = function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); };
+		document.onfocusin = function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); };
+	} else {
+		Event.observe(window, 'blur', function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); });
+		Event.observe(window, 'focus', function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); });
+	}</script><script type="text/javascript">g_swLoadTime = new StopWatch(g_loadTime);
+
+    if (window.CustomEvent){
+        CustomEvent.fireAll("ck_updated", "ae14e6a887d3b91042ac653e0ebb35dfc1a25a7b7ec09b0ca9a06418b3d46137379b21a0");
+	    CustomEvent.fireTop("navigation.complete", window);
+	}
+
+    addLoadEvent( function() {
+
+		if (isValidTouchDevice())
+			addTouchScrollClassToBody();
+
+      if (typeof g_ck != 'undefined') {
+        CustomEvent.observe("ck_updated", function(ck) { g_ck = ck; });
+        CustomEvent.fireAll("ck_updated", "ae14e6a887d3b91042ac653e0ebb35dfc1a25a7b7ec09b0ca9a06418b3d46137379b21a0");}try {
+              var helpico = getTopWindow().document.getElementById("help_ico");
+
+              if (helpico) {
+                var urlname=window.location.pathname.split("?");
+                var search_str = window.location.search;
+                
+                // if this is a form, extract the record's sys_id...
+                var sys_id_loc = search_str.search(/sys_id=[0-9a-f]{32}/i);
+                var sys_id_str = (sys_id_loc != -1) ? search_str.substr(sys_id_loc, 39) : null;
+                
+                // make the URL to our context help processor...
+                var url_search = "?sysparm_url=" + urlname[0];
+                if (sys_id_loc != -1)
+                   url_search += "&" + sys_id_str;
+
+               	helpico.href="context_help.do" + url_search;                	
+              }
+            } catch (exception) {}
+
+      synchCache();
+      pageLoaded();
+    });
+    
+    function synchCache() {
+      try {
+        var w = getTopWindow();
+        if (w.g_cache_message)
+          w.g_cache_message.stamp("d7ff32038703311042ac653e0ebb356b");
+  
+        if (w.g_cache_td)
+          w.g_cache_td.stamp("5ef326e887d3b91042ac653e0ebb353b");
+      } catch(e) {}
+    }
+
+    function isValidTouchDevice() {
+		var navigator = window.navigator || {};
+		var devices;
+		try {
+			devices = 'iPad,Android'.split(',');
+		} catch(ex) {
+			devices = [];
+		}
+		return devices.some(function(item) {return item.trim() === navigator.platform;});
+	}
+
+	function addTouchScrollClassToBody() {
+		if ('ontouchstart' in window ||
+				(navigator.maxTouchPoints !== 'undefined' && navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints !== 'undefined' && navigator.msMaxTouchPoints > 0)) {
+			if (typeof document.body != undefined) {
+				document.body.classList.add('touch_scroll');
+			}
+		}
+	}
+  </script><!--googleoff: all--><noscript>This site requires JavaScript to be enabled</noscript> <!--googleon: all--><script type="text/javascript" src="/scripts/app.guided_tours/js_guided_tours_includes.jsx?v=09-14-2023_1002"></script><script>NOW.xperf.scriptEnd = NOW.xperf.now();
+				NOW.xperf.parseEnd = NOW.xperf.now();</script></head><body class="               " data-formName="auth_redirect"><span class="sr-only"><div id="html_page_aria_live_polite" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="polite"></div><div id="html_page_aria_live_assertive" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="assertive"></div></span><div class="outputmsg_div"><div id="output_messages" class="outputmsg_container outputmsg_hide"><button type="button" aria-label="Close Messages" id="close-messages-btn" class="btn btn-icon close icon-cross" onclick="GlideUI.get().onCloseMessagesButtonClick(this); return false;"></button><div class="outputmsg_div" aria-live="polite" role="region" data-server-messages="false"></div></div><script>addRenderEvent(function() {CustomEvent.fire('glide_optics_inspect_update_watchfield', '');});
+
+			var accessibilityEnabled = Boolean(false);
+			if (accessibilityEnabled) {
+				$j(function() {
+					$j('#output_messages .btn.btn-icon.close').focus();
+				});
+			}</script><span class="ui_notification" data-type="session_change" data-text="" data-attr-session_domain="global"></span></div><div class="loading-container"><div class="loading-indicator icon-loading icon-lg"></div></div><script data-comment="loading_page redirect">setTimeout(function() {
+				top.location.href = 'https://my.disneystreaming.com/app/ds-sso_servicenowdsprodcustom_1/exkt8on8sAgofZmjf696/sso/saml?SAMLRequest=nVJbb9owFP4rkd+TEBO6YBGkDDQNqeuiQvvQl8rYJ9RbbGc+Di3/fiYw9SK1qia/2d/5bscz5LqlHat6/2Cu4U8P6KMn3Rpkp5eS9M4wy1EhM1wDMi/YuvpxyWgyYp2z3grbkqhCBOeVNQtrsNfg1uD2SsDN9WVJHrzvkKWpVGjggN4B18rsEjxhYmMfE2F1avi+4ztIpCXRMjhRhh8pnwn0IXnLcZzjXZdKjBHt/ZkyMEoM7qTo0Vt9n6Xw9NsX1hRY7Wxzp381F9OLNEykx5wk+madgKGFkjS8RSDRalmS9dVCFMWXvBiLcLJskouGbrMpnYqm2E54Pm0CEGuOqPbwPIrYw8qg58aXhI7oOM5oTEcbStkkZ+MsKWh+R6L63N9XZWQI83HZ2xMI2ffNpo7rn+vNQLBXEtxVQP9fz7fgcOg4SJD5bNg6G/y7lx/hY2v83/bJ/JMeZulLpbNux445Vsvatkocoqpt7eMiEPiQzbsehjVp7t83kyXZcKNk3AxQBpqrtpLSASJJ52fd1z9+/hc=&RelayState=https://disneystreaming.service-now.com/navpage.do';
+			}, 0);</script><div style="border:none; visibility:hidden"><form name="sys_personalize" style="display:inline" method="GET" action="slushbucket.do"><input type="hidden" name="sysparm_referring_url" value="auth_redirect.do?sysparm_stack=no@99@sysparm_url=https%3A%2F%2Fmy.disneystreaming.com%2Fapp%2Fds-sso_servicenowdsprodcustom_1%2Fexkt8on8sAgofZmjf696%2Fsso%2Fsaml%3FSAMLRequest%3DnVJbb9owFP4rkd%2BTEBO6YBGkDDQNqeuiQvvQl8rYJ9RbbGc%2BDi3%2FfiYw9SK1qia%2F2d%2F5bscz5LqlHat6%2F2Cu4U8P6KMn3Rpkp5eS9M4wy1EhM1wDMi%2FYuvpxyWgyYp2z3grbkqhCBOeVNQtrsNfg1uD2SsDN9WVJHrzvkKWpVGjggN4B18rsEjxhYmMfE2F1avi%2B4ztIpCXRMjhRhh8pnwn0IXnLcZzjXZdKjBHt%2FZkyMEoM7qTo0Vt9n6Xw9NsX1hRY7Wxzp381F9OLNEykx5wk%2BmadgKGFkjS8RSDRalmS9dVCFMWXvBiLcLJskouGbrMpnYqm2E54Pm0CEGuOqPbwPIrYw8qg58aXhI7oOM5oTEcbStkkZ%2BMsKWh%2BR6L63N9XZWQI83HZ2xMI2ffNpo7rn%2BvNQLBXEtxVQP9fz7fgcOg4SJD5bNg6G%2Fy7lx%2FhY2v83%2FbJ%2FJMeZulLpbNux445Vsvatkocoqpt7eMiEPiQzbsehjVp7t83kyXZcKNk3AxQBpqrtpLSASJJ52fd1z9%2B%2Fhc%3D%26RelayState%3Dhttps%3A%2F%2Fdisneystreaming.service-now.com%2Fnavpage.do"></input><input type="hidden" name="sysparm_view" value=""></input></form></div><script type="text/javascript" src="/scripts/ui_page_footer.jsx?v=09-14-2023_1002"></script><span style="display:none" data-comments="js_includes_last_doctype"></span><script>NOW.xperf.lastDoctypeBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_last_doctype.jsx?v=09-14-2023_1002&amp;lp=Tue_Sep_26_05_25_24_PDT_2023&amp;c=15_471"></script><script type="text/javascript" src="/scripts/heisenberg/heisenberg_all.jsx?v=09-14-2023_1002"></script><script type="text/javascript" src="/scripts/js_includes_list_edit_doctype.jsx?v=09-14-2023_1002&amp;lp=Tue_Sep_26_05_25_24_PDT_2023&amp;c=15_471"></script><script type="text/javascript" src="/scripts/transaction_scope_includes.jsx?v=09-14-2023_1002"></script><script>if ('') 
+			GlideTransactionScope.setTransactionScope('');
+		if ('') 
+			GlideTransactionScope.setRecordScope('');
+		if ('') 
+			GlideTransactionScope.setTransactionUpdateSet('');
+		if (typeof g_form != 'undefined')
+			$(g_form.getFormElement()).fire('glidescope:initialized', {gts : GlideTransactionScope});</script><span style="display:none" data-comments="requires"></span><script>NOW.xperf.lastDoctypeEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>NOW.xperf.dbContextBegin = NOW.xperf.now();</script><script>NOW.xperf.dbContextEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>addTopRenderEvent(function() {
+			NOW.PageTiming();
+		});</script><script data-description="MessagesTag">(function() {
+ var messages = new GwtMessage();
+messages.set('Browser response time');
+messages.set('Timing details');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('{0} of {1} Other: {2}');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('Show Timing Breakdown');
+messages.set('Browser timing detail');
+messages.set('Time');
+messages.set('Other');
+messages.set('Timing details breakdown');
+messages.set('Response time(ms): {0}');
+messages.set('Network: {0}');
+messages.set('Network: {0}ms');
+messages.set('Server: {0}');
+messages.set('Server: {0}ms');
+messages.set('Browser: {0}');
+messages.set('Browser: {0}ms');
+messages.set('Response time','Response Time');
+messages.set('Close');
+})()</script><script type="text/javascript">var g_serverTime = parseInt("30") + parseInt("0");
+            var g_logClientViewRoles = "";
+
+			// do not do this for the navigation menu
+            if (window.name != 'gsft_nav') {
+				 addAfterPageLoadedEvent(function() {
+					 if (window.performance)
+						setTimeGraph();
+					 else 
+						firePageTimer();
+				 });
+			 }
+			 
+			function setTimeGraph() {
+				if (window.performance.timing.loadEventEnd > 0)
+			 		firePageTimer();
+			 	else 
+			 		setTimeout(setTimeGraph, 300);
+			 }
+			 
+			function firePageTimer() {
+				 if (window.performance && performance.timing.requestStart != performance.timing.responseStart) {
+				 	var p = performance.timing;
+
+				 	CustomEvent.fire('page_timing', { name: 'SERV', ms: p.responseEnd - p.requestStart});
+				 	CustomEvent.fire('page_timing', { name: 'REND', ms: (p.loadEventEnd - p.responseEnd) });
+				 	CustomEvent.fire('page_timing_network', { name: 'NETW', ms: (p.responseEnd - p.navigationStart) });
+				 } else {
+				    CustomEvent.fire('page_timing', { name: 'SERV', ms: g_serverTime });
+					CustomEvent.fire('page_timing', { name: 'REND', startTime: g_loadTime });
+					CustomEvent.fire('page_timing_network', { name: 'NETW', loadTime: g_loadTime });
+				 }
+
+			 	 CustomEvent.fire('page_timing_show', { show: ''  });var o = {};
+	      o.types = {};o.types['SECT'] = true;o.types['RLV2'] = true;o.types['UIOL'] = true;o.types['CSOL'] = true;
+	
+	      o.transaction_id = '62142a2887d3b91042ac653e0ebb3578';
+	      o.table_name = '';
+	      o.form_name = 'auth_redirect';
+	      o.view_id = 'Default view';
+	      o.logged_in = false;
+	      o.win = window;
+	      CustomEvent.fire('page_timing_client', o);}
+			 
+            // The following line is used to set the time when we start requesting a new page
+            Event.observe(window, 'beforeunload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+                CustomEvent.fireTop('request_start', document);
+            });
+
+            // simple pages fire this (stats.do, etc.)
+            CustomEvent.observe('simple_page.unload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+            }); 
+
+            // indicate we have completed the request (used by RequestManager.js for cancel widget)
+            addLoadEvent(function() {
+            	CustomEvent.fireTop("request_complete", window.location);
+            });</script><script type="text/javascript" src="/scripts/doctype/z_last_include.jsx?v=09-14-2023_1002"></script></body><script type="text/html" id="popup_template"><div class="popup popup_form" style=""><iframe src="$src" style=""></iframe></div></script></html>
